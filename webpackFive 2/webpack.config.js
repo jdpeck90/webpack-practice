@@ -2,7 +2,7 @@
 var path = require('path');
 var webpack = require('webpack')
 
-config = {
+module.export = {
     entry: './src/main.js',
 
     output: {
@@ -18,13 +18,13 @@ config = {
             loaders: ['style-loader', 'css-loader']
         },
         {
-            test:/\.js$/,
+            test:/\.js&/,
             exclude: /node_modules/,
             loader: "babel-loader"
         }
         ],
     },
-    plugins: []
+    plugins: [],
 };
     
     if(process.env.NODE_ENV === 'production') {
@@ -33,4 +33,3 @@ config = {
         );
     }
 
-module.exports = config;
