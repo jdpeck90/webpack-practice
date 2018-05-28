@@ -4,10 +4,11 @@
   "description": "webpack boilerplate for react apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Peck",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.0",
