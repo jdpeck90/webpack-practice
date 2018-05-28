@@ -1,8 +1,16 @@
-export function notify (message) {
-    alert("test test");
+
+
+function announce (message) {
+    alert(message);
 }
 
-export function shout(yell) {
-    console.log(yell);
+function yell(shout) {
+    console.log(shout);
 }
 
+
+export default {
+    announce: announce,
+    yelling: yell
+
+}

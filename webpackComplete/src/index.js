@@ -1,7 +1,7 @@
+import notification from './notification';
+import babletest from './babeltest';
 
-import { notify, shout } from './notification';
 
-
-shout('this should be in the console') 
-
-notify('test')
+console.log(babletest)
+notification.announce('message 1')
+notification.yelling('message 2')
